@@ -28,7 +28,7 @@ abstract class UploadFilesTask extends DefaultTask {
     @Input
     abstract Property<String> getBranch()
 
-    @TaskAction
+    //@TaskAction
     void run() {
         for (def file in inputs.files.asFileTree.files) {
             if (file.isFile()) {
